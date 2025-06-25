@@ -1,3 +1,4 @@
 <?php
-require_once "config/autoload.php";
-require "config/Router.php";
+require"config/autoload.php";
+$router = new Router();
+$router->handleRequest($_GET);
