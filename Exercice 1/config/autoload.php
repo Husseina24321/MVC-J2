@@ -1,3 +1,4 @@
 <?php
 require "Router.php";
-require "controllers/UserController.php";
+require_once "controllers/UserController.php";
+require_once "models/User.php";
