@@ -1,3 +1,19 @@
 <main>
-    <h1> Utilisateur Ajouter</h1>
+    <h2> Utilisateur Ajouter</h2>
+    <form action="index.php?route=check_create_user" method="post">
+        <label for="first_name"> Prénom :</label><br>
+        <input type="first_name" name="first_name" id="first_name" required><br><br>
+        
+        <label for="last_name"> Nom :</label><br>
+        <input type="last_name" name="last_name" id="last_name" required><br><br>
+        
+        <label for="email">Email :</label><br>
+        <input type="email" name="email" id="email" required><br><br>
+    
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" name="password" id="password" required><br><br>
+    
+        <button type="submit">Se connecter</button>
+    </form>
+
 </main>
