@@ -4,7 +4,7 @@ class UserManager extends AbstractManager {
     {
         parent::__construct();
     }
-    public function findfAll(): array{
+    public function findAll(): array{
         $query = $this->db->query("SELECT * FROM users");
         $results = $query->fetchAll();
 
