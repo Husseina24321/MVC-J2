@@ -2,3 +2,4 @@
 require "Router.php";
 require_once "controllers/UserController.php";
 require_once "models/User.php";
+require_once"managers/AbstractManager.php";
