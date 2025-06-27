@@ -1,3 +1,16 @@
 <main>
-    <h1>Liste des utilisateurs modifier</h1>
+    <h1>Modifier l'utilisateur</h1>
+
+    <form action="index.php?route=check_update_user&id=<?= $user->getId() ?>" method="post">
+    <label for="first_name">Prénom :</label><br>
+    <input type="text" name="first_name" id="first_name" value="<?= htmlspecialchars($user->getFirstName()) ?>" required><br><br>
+
+    <label for="last_name">Nom :</label><br>
+    <input type="text" name="last_name" id="last_name" value="<?= htmlspecialchars($user->getLastName()) ?>" required><br><br>
+
+    <label for="email">Email :</label><br>
+    <input type="email" name="email" id="email" value="<?= htmlspecialchars($user->getEmail()) ?>" required><br><br>
+
+    <button type="submit">Mettre à jour</button>
+</form>
 </main>
