@@ -45,7 +45,10 @@ class UserController{
     public function delete(){
         echo "suppression de l'utilisateur";
     }
-   public function list(){
+   public function list(): void
+   {
+        $manager = new UserManager();
+        $users = $manager->findAll();
         $route = "templates/users/list.phtml";
         require "templates/layout.phtml";
     }
